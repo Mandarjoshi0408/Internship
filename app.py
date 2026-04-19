@@ -62,7 +62,7 @@ def startup_db_check():
     except Exception as e:
         print(f"Startup Fix: {e}")
 
-# --- 4. AUTH ROUTES (Preserved - Fixed the student_id login) ---
+# --- 4. AUTH ROUTES 
 @app.post("/login")
 def login(data: LoginRequest):
     conn = get_db_connection()
